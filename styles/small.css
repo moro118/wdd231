@@ -63,7 +63,6 @@ content: "\00D7";
     display: block;
     padding: .8rem 10px;
     color: black;
-    text-decoration: none;
     border-bottom: solid 1px #ccc;
 }
 .navigation li.current{
