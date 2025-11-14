@@ -1,0 +1,126 @@
+
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+} 
+main{
+    flex: 1; /* Allows main to grow and fill available space */
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+header{
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #dee2e6;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+header img{
+    width: 250px;
+    height: auto;
+}
+.nav-menu{
+    display: flex;
+    display: none;
+    gap: 0.5rem;
+}
+.nav-menu a{
+    padding: 0.5rem 0.75rem;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 0.9rem;
+}
+footer{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 1rem;
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+}
+footer div{
+    padding: 0.5rem;
+}
+footer div p{
+    text-align: center;
+    font-size: 0.9rem;
+}
+.social{
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+}
+.social a img{
+    height: 44px;
+    width: 44px;
+}
+.contact p{
+    margin: 0.25rem 0;
+    font-size: 0.9rem;
+}
+.credits p{
+    margin: 0.25rem 0;
+    font-size: 0.9rem;
+}
+
+.member-card-grid{
+   display: grid;
+   grid-template-columns: 1fr;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 1rem;
+    background-color: #f9f9f9;
+    text-align: left;
+}
+.member-card-grid img{
+    width: 100px;
+}
+.member-card-list{
+    display: grid;
+    grid-template-columns: 1fr 1fr 0.3fr 0.3fr;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 1rem;
+    background-color: #f9f9f9;
+    text-align: left;
+}
+.member-card-list *{
+width: auto;
+padding: 1%;
+}
+.member-card-grid *{
+width: auto;
+padding: 1%;
+}
+.cards-list{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.cards-grid{
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   gap: 1rem;
+}

@@ -1,0 +1,65 @@
+[
+  {
+    "name": "Nissan Aguascalientes A1 Plant",
+    "address": "Av. Nissan s/n, Parque Industrial, 20340 Aguascalientes, Ags.",
+    "phone": "449-910-7900",
+    "websiteURL": "https://www.nissan.com.mx/",
+    "image": "images/nissan.png",
+    "membershipLevel": 3,
+    "industry": "Automotive Manufacturing"
+  },
+  {
+    "name": "JATCO México",
+    "address": "Boulevard Aeropuerto Km 2.2, Peñuelas, 20340 Aguascalientes, Ags.",
+    "phone": "449-910-6500",
+    "websiteURL": "https://jatco.com.mx/",
+    "image": "images/jatco.png",
+    "membershipLevel": 3,
+    "industry": "Automotive Manufacturing"
+  },
+  {
+    "name": "Softtek",
+    "address": "Av. Eugenio Garza Sada 902, Parque Industrial Tecnopolo, 20328 Aguascalientes, Ags.",
+    "phone": "449-910-7800",
+    "websiteURL": "https://www.softtek.com/",
+    "image": "images/sofftek.png",
+    "membershipLevel": 3,
+    "industry": "Software Development"
+  },
+  {
+    "name": "Fiesta Americana Aguascalientes",
+    "address": "Calle Laureles 401, Col. Las Flores, 20220 Aguascalientes, Ags.",
+    "phone": "443-310-8137",
+    "websiteURL": "httpshttps://www.fiestamericana.com/hoteles-y-resorts/fiesta-americana-aguascalientes",
+    "image": "images/fiesta-americana.png",
+    "membershipLevel": 2,
+    "industry": "Hospitality / Hotel"
+  },
+  {
+    "name": "Centro Comercial Altaria",
+    "address": "Blvd. A Zacatecas Nte. 849, Fracc. Trojes de Alonso, 20116 Aguascalientes, Ags.",
+    "phone": "449-153-3004",
+    "websiteURL": "https://cc-altaria.mx/",
+    "image": "images/altaria.png",
+    "membershipLevel": 2,
+    "industry": "Retail / Shopping Mall"
+  },
+  {
+    "name": "La Saturnina",
+    "address": "Venustiano Carranza 110, Zona Centro, 20000 Aguascalientes, Ags.",
+    "phone": "449-994-0449",
+    "websiteURL": "https://lasaturnina.com/",
+    "image": "images/laSaturnina.png",
+    "membershipLevel": 1,
+    "industry": "Restaurant"
+  },
+  {
+    "name": "Universidad Panamericana Campus Aguascalientes",
+    "address": "Av. Josemaría Escrivá de Balaguer 101, 20296 Aguascalientes, Ags.",
+    "phone": "449-910-6200",
+    "websiteURL": "httpshttps://www.up.edu.mx/aguascalientes/",
+    "image": "images/UniversidadPanamericana.png",
+    "membershipLevel": 1,
+    "industry": "Education"
+  }
+]

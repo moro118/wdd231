@@ -1,0 +1,19 @@
+@media screen and (min-width: 600px){
+   footer{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-self: center;
+    align-self: center;
+    border-width: 1px;
+   }
+
+   .nav-menu{
+    display: flex;
+    gap: 0.5rem;
+    }
+    #hamburger-btn{
+    display: none;
+    }
+    
+}
