@@ -1,3 +1,4 @@
+
 @media screen and (min-width: 600px){
    footer{
     width: 100%;
@@ -8,12 +9,23 @@
     border-width: 1px;
    }
 
-   .nav-menu{
-    display: flex;
-    gap: 0.5rem;
-    }
-    #hamburger-btn{
-    display: none;
-    }
+   .nav-menu, .nav-menu.active {
+      display: flex;
+      flex-direction: row; 
+      position: static; 
+      width: auto; 
+      background-color: transparent; 
+      box-shadow: none; 
+      padding: 0;}
+
+   #hamburger-btn {
+      display: none;
+   }
+
+.cards-grid{
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   gap: var(--default-gap);
+}
     
 }

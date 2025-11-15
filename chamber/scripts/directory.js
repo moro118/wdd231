@@ -1,16 +1,37 @@
 const dataURL = "data/members.json";
+const main = document.querySelector('main');
 const mainContainerlist = document.querySelector('.cards-list');
 const mainContainergrid = document.querySelector('.cards-grid');
 const gridbutton = document.querySelector("#directory-grid");
 const listbutton = document.querySelector("#directory-list");
-
+const hamburguer = document.querySelector("#hamburger-btn");
+const nav = document.querySelector(".nav-menu");
 let membersData = [];
 
+hamburguer.addEventListener("click", () => {
+    nav.classList.toggle("active");
+    hamburguer.classList.toggle("open");
+});
 document.addEventListener('DOMContentLoaded', () => {
     const lastModifiedDate = document.querySelector("#lastmodified");
     if (lastModifiedDate) {
         lastModifiedDate.textContent = 'Last Modified: ' + document.lastModified;
     }
+
+    const pageTitle = document.createElement('h1');
+    pageTitle.textContent = 'Member Directory';
+    main.prepend(pageTitle);
+
+    
+    const currentPage = window.location.pathname.split('/').pop();
+    const navLinks = document.querySelectorAll('.nav-menu a');
+    navLinks.forEach(link => {
+        const linkPage = link.getAttribute('href').split('/').pop();
+        if (linkPage === currentPage) {
+            link.classList.add('current-page');
+        }
+    });
+
     getMembers();
 });
 async function getMembers() {
@@ -18,9 +39,9 @@ async function getMembers() {
         const response = await fetch(dataURL);
         if (response.ok) {
             membersData = await response.json();
-            displayMembersList(membersData);
-            mainContainergrid.style.display = "none";
-            mainContainerlist.style.display = "grid"; // or "block" depending on your CSS
+            displayMembers(membersData);
+            main.classList.add('list-view'); // Set list view as default
+            listbutton.classList.add('active-view'); // Set list button as active by default
         } else {
             throw Error(await response.text());
         }
@@ -30,6 +51,11 @@ async function getMembers() {
         mainContainerlist.innerHTML = errorMessage;
         mainContainergrid.innerHTML = errorMessage;
     }
+}
+
+const displayMembers = (members) => {
+    displayMembersList(members);
+    displayMembersGrid(members);
 }
 
 const displayMembersList = (members) => {
@@ -84,15 +110,17 @@ const displayMembersGrid = (members) => {
 }
 
 gridbutton.addEventListener("click", () => {
-    mainContainergrid.innerHTML = ""; 
-    displayMembersGrid(membersData);
-    mainContainergrid.style.display = "grid";
-    mainContainerlist.style.display = "none";
+    main.classList.add('grid-view');
+    main.classList.remove('list-view');
+
+    gridbutton.classList.add('active-view');
+    listbutton.classList.remove('active-view');
 });
 
 listbutton.addEventListener("click", () => {
-    mainContainerlist.innerHTML = "";
-    displayMembersList(membersData);
-    mainContainerlist.style.display = "grid";
-    mainContainergrid.style.display = "none";
+    main.classList.add('list-view');
+    main.classList.remove('grid-view');
+
+    listbutton.classList.add('active-view');
+    gridbutton.classList.remove('active-view');
 });

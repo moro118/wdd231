@@ -1,3 +1,16 @@
+:root {
+    --primary-color: #007bff;
+    --header-bg: #f8f9fa;
+    --header-border: #dee2e6;
+    --footer-bg: #343a40;
+    --card-bg: #f9f9f9;
+    --card-border-color: #ccc;
+    --text-light: white;
+    --shadow: 0 2px 5px rgba(0,0,0,0.1);
+    --default-padding: 1rem;
+    --default-gap: 1rem;
+    --font-family-main: 'Roboto', sans-serif; 
+}
 
 *{
    margin: 0;
@@ -5,56 +18,99 @@
    box-sizing: border-box;
 }
 body{
+    font-family: var(--font-family-main);
     min-height: 100vh;
     display: flex;
     flex-direction: column;
 } 
 main{
-    flex: 1; /* Allows main to grow and fill available space */
-    padding: 1rem;
+    flex: 1; 
+    padding: var(--default-padding);
     display: grid;
     grid-template-columns: 1fr;
-    gap: 1rem;
+    gap: var(--default-gap);
 }
 header{
     width:100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0.5rem 1rem;
-    background-color: #f8f9fa;
-    border-bottom: 1px solid #dee2e6;
+    padding: 0.5rem var(--default-padding);
+    background-color: var(--header-bg);
+    border-bottom: 1px solid var(--header-border);
   position: sticky;
   top: 0;
   z-index: 1000;
-
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  box-shadow: var(--shadow);
 }
 header img{
     width: 250px;
     height: auto;
 }
-.nav-menu{
+.nav-menu.active{
     display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%; 
+    left: 0;
+    width: 100%;
+    background-color: var(--header-bg);
+    box-shadow: var(--shadow);
+    padding: var(--default-padding) 0;
+}
+
+#hamburger-btn {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+#hamburger-btn span:last-child {
+    display: none;
+}
+
+#hamburger-btn.open span:first-child {
+    display: none;
+}
+
+#hamburger-btn.open span:last-child {
+    display: block;
+}
+
+.nav-menu{
     display: none;
     gap: 0.5rem;
 }
+
+
 .nav-menu a{
     padding: 0.5rem 0.75rem;
-    background-color: #007bff;
-    color: white;
+    background-color: var(--primary-color);
+    color: var(--text-light);
     border-radius: 5px;
     text-decoration: none;
     text-align: center;
     font-size: 0.9rem;
 }
+.nav-menu a:hover {
+    filter: brightness(90%);
+}
+
+
+.nav-menu a.current-page {
+    background-color: #0056b3;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
 footer{
     display: grid;
     grid-template-columns: 1fr;
-    gap: 1rem;
-    padding: 1rem;
-    background-color: #343a40;
-    color: white;
+    gap: var(--default-gap);
+    padding: var(--default-padding);
+    background-color: var(--footer-bg);
+    color: var(--text-light);
     text-align: center;
 }
 footer div{
@@ -84,13 +140,38 @@ footer div p{
     font-size: 0.9rem;
 }
 
+/* --- View Toggle Buttons --- */
+.filters {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-bottom: var(--default-gap);
+}
+
+#directory-grid, #directory-list {
+    padding: 0.5rem 1rem;
+    border: 2px solid var(--primary-color);
+    background-color: var(--text-light);
+    color: var(--primary-color);
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+/* Hover state for both buttons */
+#directory-grid:hover, #directory-list:hover {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+}
+
 .member-card-grid{
    display: grid;
    grid-template-columns: 1fr;
-    border: 1px solid #ccc;
+    border: 1px solid var(--card-border-color);
     border-radius: 8px;
-    padding: 1rem;
-    background-color: #f9f9f9;
+    padding: var(--default-padding);
+    background-color: var(--card-bg);
     text-align: left;
 }
 .member-card-grid img{
@@ -99,10 +180,10 @@ footer div p{
 .member-card-list{
     display: grid;
     grid-template-columns: 1fr 1fr 0.3fr 0.3fr;
-    border: 1px solid #ccc;
+    border: 1px solid var(--card-border-color);
     border-radius: 8px;
-    padding: 1rem;
-    background-color: #f9f9f9;
+    padding: var(--default-padding);
+    background-color: var(--card-bg);
     text-align: left;
 }
 .member-card-list *{
@@ -121,6 +202,26 @@ padding: 1%;
 
 .cards-grid{
    display: grid;
-   grid-template-columns: 1fr 1fr 1fr;
-   gap: 1rem;
+   grid-template-columns: 1fr;
+   gap: var(--default-gap);
+}
+
+/* View-switching styles */
+.grid-view .cards-list,
+.list-view .cards-grid {
+    display: none;
+}
+
+.grid-view .cards-grid {
+    display: grid;
+}
+
+.list-view .cards-list {
+    display: flex;
+}
+
+/* Active view button style (Wayfinding) */
+.active-view {
+    background-color: var(--primary-color);
+    color: var(--text-light);
 }
