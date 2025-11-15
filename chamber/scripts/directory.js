@@ -18,11 +18,6 @@ document.addEventListener('DOMContentLoaded', () => {
         lastModifiedDate.textContent = 'Last Modified: ' + document.lastModified;
     }
 
-    const pageTitle = document.createElement('h1');
-    pageTitle.textContent = 'Member Directory';
-    main.prepend(pageTitle);
-
-    
     const currentPage = window.location.pathname.split('/').pop();
     const navLinks = document.querySelectorAll('.nav-menu a');
     navLinks.forEach(link => {
