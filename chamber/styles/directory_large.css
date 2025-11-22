@@ -1,5 +1,9 @@
 
 @media screen and (min-width: 600px){
+   main {
+      grid-row: 2 / 3; 
+   }
+
    footer{
     width: 100%;
     display: grid;
@@ -22,10 +26,96 @@
       display: none;
    }
 
+   #hero {
+      position: relative; 
+   }
+
+   .cta-button {
+      position: absolute;
+      bottom: 20px;
+      right: 20px;
+      background-color: #f0b429; 
+      color: #333;
+      padding: 12px 24px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      transition: all 0.3s ease;
+   }
+
+   .cta-button:hover {
+      background-color: #e0a824; 
+      transform: translateY(-2px);
+   }
+
 .cards-grid{
    display: grid;
    grid-template-columns: 1fr 1fr 1fr;
    gap: var(--default-gap);
 }
-    
+#weather-forecast-events{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    width: 100%;
+    padding: 1rem;
+    background-color: #e9e9e9;
+    flex-wrap: wrap;
+}
+
+#weather-forecast-events > div {
+    flex: 1 1 250px; 
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#businesses{
+    display: flex;
+    flex-direction: row;
+    background-color: #f0f0f0;
+    width: 100%;
+    padding: 1rem;
+    gap: 1rem;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.spotlight-card {
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    text-align: center;
+    flex-basis: 300px; 
+    flex-grow: 1;
+}
+
+.spotlight-card img {
+    max-width: 150px;
+    height: auto;
+}
+
+}
+
+
+#hamburger-btn span:nth-child(2) {
+   display: none;
+}
+
+#hamburger-btn.active span:nth-child(1) {
+   display: none;
+}
+
+#hamburger-btn.active span:nth-child(2) {
+   display: block;
+}
+
+.nav-menu a.current {
+   background-color: #f0b429; 
+   color: #333;
+   font-weight: bold;
 }

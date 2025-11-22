@@ -140,7 +140,7 @@ footer div p{
     font-size: 0.9rem;
 }
 
-/* --- View Toggle Buttons --- */
+
 .filters {
     display: flex;
     justify-content: center;
@@ -159,7 +159,6 @@ footer div p{
     transition: background-color 0.2s, color 0.2s;
 }
 
-/* Hover state for both buttons */
 #directory-grid:hover, #directory-list:hover {
     background-color: var(--primary-color);
     color: var(--text-light);
@@ -206,7 +205,6 @@ padding: 1%;
    gap: var(--default-gap);
 }
 
-/* View-switching styles */
 .grid-view .cards-list,
 .list-view .cards-grid {
     display: none;
@@ -220,8 +218,66 @@ padding: 1%;
     display: flex;
 }
 
-/* Active view button style (Wayfinding) */
+
 .active-view {
     background-color: var(--primary-color);
     color: var(--text-light);
+}
+#hero {
+    position: relative;
+}
+#hero img{
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+}
+
+.cta-button {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: #f0b429; /* Gold color from theme */
+    color: #333;
+    padding: 8px 16px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    font-size: 0.9rem;
+}
+
+#weather-forecast-events{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+#weather-forecast-events div{
+    width: 100%;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+} 
+#businesses{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.spotlight-card {
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+}
+
+#events h2 {
+    margin-bottom: 1rem; /* Adds space between the title and the list */
 }

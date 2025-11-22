@@ -12,12 +12,13 @@
     <meta property="og:description" content="Explore the official member directory of the Aguascalientes Chamber of Commerce. Find and connect with local businesses to support our vibrant community.">
     <meta property="og:image" content="https://moro118.github.io/wdd231/chamber/images/logo.svg">
     <meta property="og:url" content="https://moro118.github.io/wdd231/chamber/directory.html">
-    <title>Directory</title>
+    <title>Home</title>
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/directory_small.css">
     <link rel="stylesheet" href="styles/directory_large.css">
     <link rel="icon" href="icon.ico">
-    <script src="scripts/directory.js" defer></script>
+    <!-- load only the home/weather script on the home page -->
+    <script src="scripts/home.js" defer></script>
     
 </head>
 <body>
@@ -37,13 +38,32 @@
     </header>
     
     <main>
-        <h1>Directory</h1>
-        <div class="filters">
-            <button id="directory-list">Directory list</button>
-            <button id="directory-grid">Directory grid</button>
-        </div>
-        <div class="cards-list"></div>
-        <div class="cards-grid"></div>   
+        <section id="hero">
+            <img src="images/hero.jpg" alt="hero image">
+            <a href="#" class="cta-button">key note tickets</a>
+        </section>
+        <h1>Home</h1>
+        <section id="weather-forecast-events">
+            <div id="events">
+                <h2>Upcoming Events</h2>
+                <ul>
+                    <li>March 15: Business Networking Mixer</li>
+                    <li>April 10: Annual General Meeting</li>
+                    <li>May 5: Small Business Workshop</li>
+                </ul>
+            </div>
+            <div id="current-weather">
+                <img src="" alt="">
+                <p id="temperature"></p>
+                <p id="description"></p>
+            </div>
+            <div id="forecast">
+                  <p id="day1"></p>
+                <p id="day2"></p>
+                <p id="day3"></p>
+            </div>
+        </section>
+        <section id="businesses"></section>
     </main>
     <footer>
         <div class="contact">
