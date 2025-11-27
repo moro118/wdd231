@@ -83,6 +83,7 @@ const allbtn = document.querySelector('#All');
 const CSEbtn = document.querySelector('#CSE');
 const WDDbtn = document.querySelector('#WDD');
 const totalCredits=document.querySelector('.Certificate-Courses p');
+const courseDetails = document.querySelector('#course-details');
 
 function onpageLoading(){
   allbtn.click();
@@ -118,6 +119,30 @@ function createCourseCard(courses) {
         courseCard.setAttribute('class', 'course-card-completed');
         courseCard.innerHTML += ' - ✔ Completed';
     }
+
+    // Add a click event listener to each card
+    courseCard.addEventListener('click', () => {
+        displayCourseDetails(course);
+    });
+
     document.querySelector('.course-cards').appendChild(courseCard);
     })
+}
+function displayCourseDetails(course) {
+  courseDetails.innerHTML = '';
+  courseDetails.innerHTML = `
+    <h2>${course.subject} ${course.number}</h2>
+    <h3>${course.title}</h3>
+    <p><strong>Credits</strong>: ${course.credits}</p>
+    <p><strong>Certificate</strong>: ${course.certificate}</p>
+    <p>${course.description}</p>
+    <p><strong>Technologies</strong>: ${course.technology.join(', ')}</p>
+  `;
+  const closeButton = document.createElement('button');
+  closeButton.textContent = '❌';
+  closeButton.addEventListener('click', () => {
+    courseDetails.close();
+  });
+  courseDetails.prepend(closeButton);
+  courseDetails.showModal();
 }
