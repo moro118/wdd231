@@ -283,10 +283,10 @@ padding: 1%;
 }
 
 #events h2 {
-    margin-bottom: 1rem; /* Adds space between the title and the list */
+    margin-bottom: 1rem; 
 }
 
-/* --- Join Page Styles --- */
+
 .join-form {
     display: flex;
     flex-direction: column;

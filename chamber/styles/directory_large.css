@@ -120,18 +120,18 @@
    font-weight: bold;
 }
 
-/* --- Join Page Large Screen Styles --- */
+
 .join-main {
    display: grid;
-   grid-template-columns: minmax(0, 600px) minmax(0, 300px); /* Define column sizes */
-   justify-content: center; /* Center the grid columns */
+   grid-template-columns: minmax(0, 600px) minmax(0, 300px); 
+   justify-content: center; 
    gap: 2rem;
    align-items: start;
 }
 .join-main > h1 {
-   grid-column: 1 / -1; /* Make the h1 span all columns */
-   text-align: center; /* Center the title text */
+   grid-column: 1 / -1; 
+   text-align: center; 
 }
-.membership-levels {
-   margin-top: 0;
+.join-main > .membership-levels {
+   margin-top: 0; 
 }
