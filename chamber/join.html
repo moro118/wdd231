@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Moroni Amon Villalobos Ortega">
+    <meta name="description" content="Join the Aguascalientes Chamber of Commerce and become part of our thriving business community.">
+    <link rel="preconnect" href="http://fonts.googleapis.com">
+    <link rel="preconnect" href="http://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <meta property="og:title" content="Join the Chamber">
+    <meta property="og:description" content="Join the Aguascalientes Chamber of Commerce and become part of our thriving business community.">
+    <meta property="og:image" content="https://moro118.github.io/wdd231/chamber/images/logo.svg">
+    <meta property="og:url" content="https://moro118.github.io/wdd231/chamber/join.html">
+    <title>Join the Chamber</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/directory_small.css">
+    <link rel="stylesheet" href="styles/directory_large.css">
+    <link rel="icon" href="icon.ico">
+    <script src="scripts/join.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src="images/logo.svg" alt="company-logo">
+        <nav class="nav-menu">
+            <a href="index.html">Home</a>
+            <a href="directory.html">Directory</a>
+            <a href="join.html" class="current">Join</a>
+            <a href="discover.html">Discover</a>
+        </nav>
+        <button id="hamburger-btn">
+            <span>&#9776;</span> 
+            <span>&times;</span>
+        </button>
+    </header>
+
+    <main class="join-main">
+        <h1>Join Our Chamber</h1>
+        <form action="thankyou.html" method="get" class="join-form">
+            <label>First Name* <input type="text" name="fname" title="Applicant's First Name" autocomplete="given-name" required></label>
+            <label>Last Name* <input type="text" name="lname" title="Applicant's Last Name" autocomplete="family-name" required></label>
+            <label>Title/Position <input type="text" name="position" title="Organizational Title" autocomplete="organization-title" pattern="[a-zA-Z\\s-]{7,}" ></label>
+            <label>Email* <input type="email" name="email" title="Email Address" autocomplete="email" placeholder="example@domain.com" required></label>
+            <label>Mobile Phone* <input type="tel" name="phone" title="Mobile Phone Number" autocomplete="tel" required></label>
+            <label>Business/Organization Name* <input type="text" name="business" title="Business/Organization Name" autocomplete="organization" required></label>
+            
+            <fieldset>
+                <legend>Membership Level</legend>
+                <label><input type="radio" name="membership" value="np" required> NP Membership (Non-Profit)</label>
+                <label><input type="radio" name="membership" value="bronze"> Bronze Membership</label>
+                <label><input type="radio" name="membership" value="silver"> Silver Membership</label>
+                <label><input type="radio" name="membership" value="gold"> Gold Membership</label>
+            </fieldset>
+
+            <label>Business/Organization Description <textarea name="description" title="Business/Organization Description"></textarea></label>
+
+            <input type="hidden" id="timestamp" name="timestamp">
+            <input type="submit" value="Join the Chamber" class="submit-btn">
+        </form>
+
+        <div class="membership-levels">
+            <div class="membership-card">
+                <h3>NP Membership</h3>
+                <p>For non-profit organizations. No fee.</p>
+                <a href="#" data-modal="np-modal">View Benefits</a>
+            </div>
+            <div class="membership-card">
+                <h3>Bronze Membership</h3>
+                <p>Ideal for small businesses starting out.</p>
+                <a href="#" data-modal="bronze-modal">View Benefits</a>
+            </div>
+            <div class="membership-card">
+                <h3>Silver Membership</h3>
+                <p>Great for growing businesses.</p>
+                <a href="#" data-modal="silver-modal">View Benefits</a>
+            </div>
+            <div class="membership-card">
+                <h3>Gold Membership</h3>
+                <p>Premium benefits for established businesses.</p>
+                <a href="#" data-modal="gold-modal">View Benefits</a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Modals -->
+    <dialog id="np-modal">
+        <button class="close-modal">❌</button>
+        <h2>Non-Profit Membership Benefits</h2>
+        <ul><li>Directory Listing</li><li>Event Access</li></ul>
+    </dialog>
+    <dialog id="bronze-modal">
+        <button class="close-modal">❌</button>
+        <h2>Bronze Membership Benefits</h2>
+        <ul><li>All NP Benefits</li><li>Training Discounts</li></ul>
+    </dialog>
+    <dialog id="silver-modal">
+        <button class="close-modal">❌</button>
+        <h2>Silver Membership Benefits</h2>
+        <ul><li>All Bronze Benefits</li><li>Homepage Spotlight Ad</li><li>Event Booth Discount</li></ul>
+    </dialog>
+    <dialog id="gold-modal">
+        <button class="close-modal">❌</button>
+        <h2>Gold Membership Benefits</h2>
+        <ul><li>All Silver Benefits</li><li>Premium Event Sponsorship</li><li>Free Ad Placements</li></ul>
+    </dialog>
+
+    <footer>
+        <div class="contact">
+            <p>Aguascalientes Chamber of Commerce</p>
+            <p>Avenida Paseo San Gerardo 789</p>
+        </div>
+        <div class="credits">
+            <p>WDD231 class Project</p>
+            <p>Moroni Amon Villalobos Ortega</p>
+            <p id="lastmodified">Last Modification</p>
+        </div>
+    </footer>
+</body>
+</html>

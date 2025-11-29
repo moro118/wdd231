@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Moroni Amon Villalobos Ortega">
+    <title>Thank You - Aguascalientes Chamber</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/directory_small.css">
+    <link rel="stylesheet" href="styles/directory_large.css">
+    <link rel="icon" href="icon.ico">
+</head>
+<body>
+    <header>
+        <img src="images/logo.svg" alt="company-logo">
+        <nav class="nav-menu">
+            <a href="index.html">Home</a>
+            <a href="directory.html">Directory</a>
+            <a href="join.html">Join</a>
+            <a href="discover.html">Discover</a>
+        </nav>
+    </header>
+
+    <main class="thankyou-main">
+        <h1>Thank You for Joining!</h1>
+        <p>We have received your application. A confirmation has been sent to your email.</p>
+        <div id="form-data-display">
+            <h2>Your Submitted Information:</h2>
+            <!-- Data will be inserted here by script -->
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Aguascalientes Chamber of Commerce</p>
+        <p id="lastmodified"></p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const params = new URLSearchParams(window.location.search);
+            const displayDiv = document.getElementById('form-data-display');
+            
+            displayDiv.innerHTML += `<p><strong>Name:</strong> ${params.get('fname')} ${params.get('lname')}</p>`;
+            displayDiv.innerHTML += `<p><strong>Email:</strong> ${params.get('email')}</p>`;
+            displayDiv.innerHTML += `<p><strong>Mobile:</strong> ${params.get('phone')}</p>`;
+            displayDiv.innerHTML += `<p><strong>Business:</strong> ${params.get('business')}</p>`;
+            displayDiv.innerHTML += `<p><strong>Membership Level:</strong> ${params.get('membership')}</p>`;
+            displayDiv.innerHTML += `<p><strong>Submitted On:</strong> ${new Date(params.get('timestamp')).toLocaleString()}</p>`;
+        });
+    </script>
+</body>
+</html>
