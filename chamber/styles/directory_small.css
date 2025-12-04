@@ -389,7 +389,6 @@ dialog::backdrop {
 }
 
 .sidebar {
-    grid-area: sidebar;
     background-color: var(--sidebar-bg);
     padding: 1rem;
     border-radius: 8px;
@@ -407,7 +406,6 @@ dialog::backdrop {
 }
 
 .gallery {
-    grid-area: gallery;
     display: grid;
     grid-template-columns: 1fr;
     gap: 1.5rem;
