@@ -60,7 +60,7 @@ function displayAttractions() {
         card.innerHTML = `
             <h2>${attraction.name}</h2>
             <figure>
-                <img src="${attraction.image}" alt="Image of ${attraction.name}" loading="lazy" width="300" height="200">
+                <img src="${attraction.image}" alt="Photo of ${attraction.name}" loading="lazy" width="300" height="200">
             </figure>
             <div class="card-content">
                 <address>${attraction.address}</address>
@@ -90,7 +90,7 @@ function setupDialog() {
             if (attraction) {
                 dialogContent.innerHTML = `
                     <h2>${attraction.name}</h2>
-                    <img src="${attraction.image}" alt="Image of ${attraction.name}" loading="lazy" width="300" height="200" style="width:100%; height:auto; border-radius: 8px;">
+                    <img src="${attraction.image}" alt="Photo of ${attraction.name}" loading="lazy" width="300" height="200" style="width:100%; height:auto; border-radius: 8px;">
                     <address>${attraction.address}</address>
                     <p>${attraction.description}</p>
                 `;
