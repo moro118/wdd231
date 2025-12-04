@@ -3,7 +3,7 @@
     /* Define the Color Palette Variables */
     --primary-color: #264653;   /* Dark Green/Blue */
     --secondary-color: #2A9D8F; /* Teal */
-    --accent-color: #E76F51;    /* Terracotta/Orange */
+    --accent-color: #c84f3a;    /* Terracotta/Orange */
     --bg-color: #F4F1DE;        /* Beige/Off-white */
     --text-color: #333333;      /* Dark Grey */
 }
@@ -71,8 +71,18 @@ main {
 
 /* Apply specific background colors to the boxes */
 .color-box.primary { background-color: var(--primary-color); }
-.color-box.secondary { background-color: var(--secondary-color); }
-.color-box.accent { background-color: var(--accent-color); }
+.color-box.secondary { 
+    background-color: var(--secondary-color); 
+    color: #0b2f28; /* dark text for sufficient contrast against #2A9D8F */
+    font-weight: 700;
+    border: 1px solid rgba(0,0,0,0.08);
+}
+.color-box.accent {
+    background-color: var(--accent-color);
+    color: #2b120d; /* dark text for sufficient contrast against #E76F51 */
+    font-weight: 700;
+    border: 1px solid rgba(0,0,0,0.08);
+}
 .color-box.background { 
     background-color: var(--bg-color); 
     color: var(--text-color); /* Dark text for light background */
