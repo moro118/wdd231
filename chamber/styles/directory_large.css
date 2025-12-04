@@ -136,30 +136,24 @@
    margin-top: 0; 
 }
 
-
-/* --- Discover Page Responsive Styles --- */
-
-/* Medium Screens */
-@media (min-width: 641px) {
+/* --- Discover Page Responsive Styles (merged into existing media query) --- */
+@media screen and (min-width: 600px) {
     .discover-grid {
         grid-template-columns: 250px 1fr; /* Sidebar and gallery */
-        grid-template-areas: "sidebar gallery";
+        grid-template-areas: "discover-title discover-title" "sidebar gallery";
     }
 
     .gallery {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    /* Add image hover effect for medium and larger screens */
     .attraction-card figure:hover img {
         opacity: 0.8;
         transform: scale(1.05);
         transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
     }
 }
-
-/* Large Screens */
-@media (min-width: 1025px) {
+@media screen and (min-width: 1025px) {
     .gallery {
         grid-template-columns: repeat(3, 1fr);
     }

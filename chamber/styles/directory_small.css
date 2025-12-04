@@ -6,10 +6,15 @@
     --card-bg: #f9f9f9;
     --card-border-color: #ccc;
     --text-light: white;
+    --text-dark-gray: #555;
     --shadow: 0 2px 5px rgba(0,0,0,0.1);
     --default-padding: 1rem;
     --default-gap: 1rem;
     --font-family-main: 'Roboto', sans-serif; 
+    --sidebar-bg: #f0f0f0;
+    --visit-message-color: #005f73;
+    --card-header-bg: #003049;
+    --backdrop-bg: rgba(0,0,0,0.5);
 }
 
 *{
@@ -331,7 +336,7 @@ padding: 1%;
     margin-top: 2rem;
 }
 .membership-card {
-    background-color: var(--card-bg);
+    background-color: var(--text-light);
     border: 1px solid var(--card-border-color);
     padding: 1rem;
     border-radius: 8px;
@@ -342,7 +347,7 @@ padding: 1%;
 }
 
 dialog {
-    border: 1px solid #ccc;
+    border: 1px solid var(--card-border-color);
     border-radius: 8px;
     padding: 2rem;
     width: 80%;
@@ -353,7 +358,7 @@ dialog {
     transform: translate(-50%, -50%);
 }
 dialog::backdrop {
-    background-color: rgba(0,0,0,0.5);
+    background-color: var(--backdrop-bg);
 }
 .close-modal {
     position: absolute;
@@ -377,9 +382,15 @@ dialog::backdrop {
     padding: 1rem;
 }
 
+.discover-title {
+    grid-column: 1 / -1; /* Make title span all columns */
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
 .sidebar {
     grid-area: sidebar;
-    background-color: #f0f0f0;
+    background-color: var(--sidebar-bg);
     padding: 1rem;
     border-radius: 8px;
     text-align: center;
@@ -392,7 +403,7 @@ dialog::backdrop {
 #visit-message {
     font-size: 1.1rem;
     font-weight: bold;
-    color: #005f73;
+    color: var(--visit-message-color);
 }
 
 .gallery {
@@ -403,11 +414,11 @@ dialog::backdrop {
 }
 
 .attraction-card {
-    border: 1px solid #ccc;
+    border: 1px solid var(--card-border-color);
     border-radius: 8px;
     overflow: hidden;
-    background-color: #fff;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    background-color: var(--text-light);
+    box-shadow: var(--shadow);
     display: flex;
     flex-direction: column;
 }
@@ -416,8 +427,8 @@ dialog::backdrop {
     font-size: 1.2rem;
     margin: 0;
     padding: 0.75rem;
-    background-color: #003049;
-    color: #fff;
+    background-color: var(--card-header-bg);
+    color: var(--text-light);
 }
 
 .attraction-card figure {
@@ -440,6 +451,6 @@ dialog::backdrop {
 
 .attraction-card address {
     font-style: italic;
-    color: #555;
+    color: var(--text-dark-gray);
     margin-bottom: 0.5rem;
 }
