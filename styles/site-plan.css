@@ -1,0 +1,130 @@
+/* GLOBAL SETTINGS */
+:root {
+    /* Define the Color Palette Variables */
+    --primary-color: #264653;   /* Dark Green/Blue */
+    --secondary-color: #2A9D8F; /* Teal */
+    --accent-color: #E76F51;    /* Terracotta/Orange */
+    --bg-color: #F4F1DE;        /* Beige/Off-white */
+    --text-color: #333333;      /* Dark Grey */
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: 'Open Sans', sans-serif; /* Body Font */
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+/* TYPOGRAPHY */
+h1, h2, h3, h4 {
+    font-family: 'Montserrat', sans-serif; /* Heading Font */
+    color: var(--primary-color);
+}
+
+header {
+    text-align: center;
+    border-bottom: 2px solid var(--secondary-color);
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+}
+
+/* CARD STYLING */
+main {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.section-card {
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.section-card h3 {
+    margin-top: 0;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+/* COLOR PALETTE TABLE */
+.color-palette {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+.color-box {
+    width: 25%;
+    height: 100px;
+    text-align: center;
+    vertical-align: middle;
+    color: white;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    border: 1px solid #ddd;
+}
+
+/* Apply specific background colors to the boxes */
+.color-box.primary { background-color: var(--primary-color); }
+.color-box.secondary { background-color: var(--secondary-color); }
+.color-box.accent { background-color: var(--accent-color); }
+.color-box.background { 
+    background-color: var(--bg-color); 
+    color: var(--text-color); /* Dark text for light background */
+}
+
+/* TYPOGRAPHY EXAMPLES */
+.body-font-example {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+/* WIREFRAME IMAGES */
+.wireframe-container {
+    display: block;
+    gap: 16px;
+    max-width: 900px;       /* match main content width */
+    margin: 0 auto;         /* center on page */
+    padding: 0 16px;
+    box-sizing: border-box;
+}
+
+.wireframe-box {
+    margin-bottom: 24px;
+    width: 100%;
+    overflow: hidden;       /* crop any overflow */
+    display: block;
+}
+
+/* constrain images to the container */
+.wireframe-box img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    object-fit: contain;
+    border-radius: 6px;
+}
+
+/* optional: limit very tall images on small screens */
+@media (max-width: 480px) {
+    .wireframe-box img {
+        max-height: 70vh;
+    }
+}
+
+/* If you previously added a desktop media-rule that set two columns,
+   this override ensures a single-column layout on all screen sizes. */
+@media (min-width: 900px) {
+  .wireframe-container {
+    display: block !important;
+    grid-template-columns: 1fr !important;
+  }
+}
