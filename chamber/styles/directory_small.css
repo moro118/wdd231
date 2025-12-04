@@ -364,3 +364,78 @@ dialog::backdrop {
     from { opacity: 0; transform: translateY(20px); }
     to { opacity: 1; transform: translateY(0); }
 }
+
+/* --- Discover Page Styles --- */
+.discover-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background-color: #f0f0f0;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.sidebar h2 {
+    margin-top: 0;
+}
+
+#visit-message {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #005f73;
+}
+
+.gallery {
+    grid-area: gallery;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+.attraction-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.attraction-card h2 {
+    font-size: 1.2rem;
+    margin: 0;
+    padding: 0.75rem;
+    background-color: #003049;
+    color: #fff;
+}
+
+.attraction-card figure {
+    margin: 0;
+    position: relative; /* For hover effect */
+}
+
+.attraction-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.attraction-card .card-content {
+    padding: 0.75rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.attraction-card address {
+    font-style: italic;
+    color: #555;
+    margin-bottom: 0.5rem;
+}
