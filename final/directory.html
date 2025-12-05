@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrailFinder | Directory</title>
+    <meta name="description" content="Browse and filter a complete directory of national parks and hiking trails.">
+    <meta name="author" content="Mario Villalobos">
+
+    <meta property="og:title" content="TrailFinder | Directory">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://mario-villalobos.github.io/wdd231/final/images/zion.jpg"> <!-- Example full URL to an image -->
+    <meta property="og:url" content="https://mario-villalobos.github.io/wdd231/final/directory.html"> <!-- Full URL to this page -->
+
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="/wdd231/final/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <script src="scripts/main.js" type="module"></script>
+</head>
+<body>
+
+    <header>
+        <div class="logo">🌲 TrailFinder</div>
+        <button id="final-menu-btn">☰</button>
+        <nav>
+            <ul id="final-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html" class="active">Directory</a></li>
+                <li><a href="favorites.html">Favorites</a></li>
+                <li><a href="contact.html">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="controls">
+            <h1>Trail Directory</h1>
+            <label for="filter-difficulty">Filter by Difficulty:</label>
+            <select id="filter-difficulty">
+                <option value="all">All Levels</option>
+                <option value="Easy">Easy</option>
+                <option value="Moderate">Moderate</option>
+                <option value="Hard">Hard</option>
+            </select>
+        </section>
+
+        <div id="park-grid" class="grid-layout"></div>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 TrailFinder Project</p>
+        <p><a href="attributions.html">Attributions</a> | <a href="#">Video Demo</a></p>
+    </footer>
+    <dialog id="park-dialog">
+    <div class="dialog-content">
+        <button id="close-dialog">❌ Close</button>
+        <h2 id="dialog-title">Park Name</h2>
+        <p id="dialog-details">Description goes here...</p>
+    </div>
+</dialog>
+</body>
+</html>

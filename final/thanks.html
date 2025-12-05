@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrailFinder | Thank You</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="logo">🌲 TrailFinder</div>
+    </header>
+
+    <main style="text-align: center; padding: 50px;">
+        <h1>Thank You!</h1>
+        <p>You have successfully joined the TrailFinder community.</p>
+        
+        <div id="results" style="background: white; padding: 20px; border-radius: 8px; max-width: 400px; margin: 20px auto; border: 1px solid #ccc;">
+            </div>
+
+        <a href="index.html" class="cta-button">Back to Home</a>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 TrailFinder Project</p>
+    </footer>
+
+    <script>
+        // THIS SCRIPT GRABS THE FORM DATA FROM THE URL
+        const currentUrl = window.location.href;
+        
+        // Break the URL into parts
+        const everythingAfterQuestionMark = currentUrl.split('?')[1];
+        
+        if (everythingAfterQuestionMark) {
+            const formData = everythingAfterQuestionMark.split('&');
+            const resultsDiv = document.getElementById('results');
+            
+            resultsDiv.innerHTML = "<h3>Review Your Details:</h3>";
+
+            formData.forEach(item => {
+                const parts = item.split('=');
+                const key = parts[0].replace('_', ' '); // Clean up "first_name" -> "first name"
+                const value = decodeURIComponent(parts[1].replace(/\+/g, ' ')); // Clean up "Benito+Juarez" -> "Benito Juarez"
+                
+                // Add a line of text for each item
+                resultsDiv.innerHTML += `<p><strong>${key}:</strong> ${value}</p>`;
+            });
+        }
+    </script>
+
+</body>
+</html>

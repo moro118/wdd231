@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrailFinder | Home</title>
+    <meta name="description" content="Discover the best hiking trails and national parks. TrailFinder helps you explore nature.">
+    <meta name="author" content="Mario Villalobos">
+
+    <!-- Social Media (Open Graph) Meta Tags -->
+    <meta property="og:title" content="TrailFinder | Home">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://mario-villalobos.github.io/wdd231/final/images/yosemite.jpg"> <!-- Example full URL to an image -->
+    <meta property="og:url" content="https://mario-villalobos.github.io/wdd231/final/index.html"> <!-- Full URL to this page -->
+    
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="/wdd231/final/favicon.ico" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+    <script src="scripts/main.js" type="module"></script>
+</head>
+<body>
+
+    <header>
+        <div class="logo">🌲 TrailFinder</div>
+        <button id="final-menu-btn">☰</button> <nav>
+            <ul id="final-menu"> <li><a href="index.html" class="active">Home</a></li> <li><a href="directory.html">Directory</a></li>
+                <li><a href="favorites.html">Favorites</a></li>
+                <li><a href="contact.html">Join</a></li> </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Find Your Next Adventure</h1>
+        <p>Explore America's most beautiful national parks and trails.</p>
+        <a href="directory.html" class="cta-button">Browse Trails</a>
+    </section>
+
+    <main>
+        <section class="featured">
+            <h2>Featured Parks</h2>
+        </section>
+        <div id="featured-container" class="grid-layout">
+            <p>Loading park data...</p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 TrailFinder Project</p>
+        <p><a href="attributions.html">Attributions</a> | <a href="#">Video Demo</a></p>
+    </footer>
+
+</body>
+</html>

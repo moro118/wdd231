@@ -1,0 +1,122 @@
+[
+    {
+        "id": 1,
+        "name": "Yosemite National Park",
+        "location": "California",
+        "difficulty": "Hard",
+        "rating": 5.0,
+        "image": "yosemite.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Grand Canyon National Park",
+        "location": "Arizona",
+        "difficulty": "Moderate",
+        "rating": 4.8,
+        "image": "grand_canyon.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Zion National Park",
+        "location": "Utah",
+        "difficulty": "Moderate",
+        "rating": 4.9,
+        "image": "zion.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Yellowstone National Park",
+        "location": "Wyoming",
+        "difficulty": "Hard",
+        "rating": 4.9,
+        "image": "yellowstone.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Grand Teton National Park",
+        "location": "Wyoming",
+        "difficulty": "Hard",
+        "rating": 4.7,
+        "image": "grand_teton.jpg"
+    },
+    {
+        "id": 6,
+        "name": "Acadia National Park",
+        "location": "Maine",
+        "difficulty": "Moderate",
+        "rating": 4.6,
+        "image": "acadia.jpg"
+    },
+    {
+        "id": 7,
+        "name": "Rocky Mountain National Park",
+        "location": "Colorado",
+        "difficulty": "Hard",
+        "rating": 4.7,
+        "image": "rocky_mountain.jpg"
+    },
+    {
+        "id": 8,
+        "name": "Glacier National Park",
+        "location": "Montana",
+        "difficulty": "Hard",
+        "rating": 4.6,
+        "image": "glacier.jpg"
+    },
+    {
+        "id": 9,
+        "name": "Olympic National Park",
+        "location": "Washington",
+        "difficulty": "Moderate",
+        "rating": 4.5,
+        "image": "olympic.jpg"
+    },
+    {
+        "id": 10,
+        "name": "Arches National Park",
+        "location": "Utah",
+        "difficulty": "Moderate",
+        "rating": 4.6,
+        "image": "arches.jpg"
+    },
+    {
+        "id": 11,
+        "name": "Bryce Canyon National Park",
+        "location": "Utah",
+        "difficulty": "Moderate",
+        "rating": 4.6,
+        "image": "bryce_canyon.jpg"
+    },
+    {
+        "id": 12,
+        "name": "Everglades National Park",
+        "location": "Florida",
+        "difficulty": "Moderate",
+        "rating": 4.2,
+        "image": "everglades.jpg"
+    },
+    {
+        "id": 13,
+        "name": "Joshua Tree National Park",
+        "location": "California",
+        "difficulty": "Moderate",
+        "rating": 4.4,
+        "image": "joshua_tree.jpg"
+    },
+    {
+        "id": 14,
+        "name": "Shenandoah National Park",
+        "location": "Virginia",
+        "difficulty": "Easy",
+        "rating": 4.3,
+        "image": "shenandoah.jpg"
+    },
+    {
+        "id": 15,
+        "name": "Badlands National Park",
+        "location": "South Dakota",
+        "difficulty": "Moderate",
+        "rating": 4.1,
+        "image": "badlands.jpg"
+    }
+]
