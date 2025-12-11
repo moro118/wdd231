@@ -10,7 +10,7 @@
     <meta property="og:type" content="website">
      <meta property="og:image" content="https://github.com/moro118/wdd231/tree/main/final/images/trailfinderhero.jpg">
     <meta property="og:url" content="https://github.com/moro118/wdd231/tree/main/final/thanks.html">
-    <link rel="icon" href="/wdd231/final/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="logotrail.ico" type="image/x-icon">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
@@ -19,17 +19,20 @@
 <body>
 
     <header>
-        <div class="logo">🌲 TrailFinder</div>
-        <button id="final-menu-btn">☰</button>
-        <nav>
-            <ul id="final-menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="directory.html">Directory</a></li>
-                <li><a href="favorites.html">Favorites</a></li>
-                <li><a href="contact.html" class="active">Join</a></li>
-            </ul>
-        </nav>
-    </header>
+  <div class="logo" aria-label="TrailFinder">
+    <img src="images/logotrail.png" alt="trail finder" aria-hidden="true">
+    <span class="site-title">TrailFinder</span>
+  </div>
+  <button id="final-menu-btn" aria-expanded="false" aria-controls="final-menu">☰</button>
+  <nav>
+    <ul id="final-menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="directory.html">Directory</a></li>
+      <li><a href="favorites.html">Favorites</a></li>
+      <li><a href="contact.html" class="active">Join</a></li>
+    </ul>
+  </nav>
+</header>
 
     <main>
         <div class="form-container">
@@ -57,7 +60,7 @@
     </main>
 
     <footer>
-        <p>&copy; 2025 TrailFinder Project</p>
+        <p>&copy; 2025 TrailFinder Project Moroni Amon Villalobos Ortega</p>
         <p><a href="attributions.html">Attributions</a> | <a href="#">Video Demo</a></p>
     </footer>
 

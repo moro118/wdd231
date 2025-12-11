@@ -1,78 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TrailFinder | Attributions</title>
-    <meta name="description" content="Attributions and sources for content used on the TrailFinder website.">
-    <meta name="author" content="Moroni Amon Villalobos Ortega">
-
-    <meta property="og:title" content="TrailFinder | Site Content Sources and Attributions">
-    <meta property="og:type" content="website">
-     <meta property="og:image" content="https://github.com/moro118/wdd231/tree/main/final/images/trailfinderhero.jpg">
-    <meta property="og:url" content="https://github.com/moro118/wdd231/tree/main/final/thanks.html">
-    <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/styles.css">
-    <link rel="icon" href="/wdd231/final/favicon.ico" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-    <script src="scripts/main.js" type="module"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>TrailFinder | Attributions</title>
+  <link rel="icon" href="logotrail.ico" type="image/x-icon">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <script src="scripts/main.js" type="module" defer></script>
 </head>
 <body>
+  <header>
+    <div class="logo" aria-label="TrailFinder">
+      <img src="images/logotrail.png" alt="trail finder" aria-hidden="true">
+      <span class="site-title">TrailFinder</span>
+    </div>
+    <button id="final-menu-btn" aria-expanded="false" aria-controls="final-menu">☰</button>
+    <nav>
+      <ul id="final-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="favorites.html">Favorites</a></li>
+        <li><a href="contact.html">Join</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <header>
-        <div class="logo">🌲 TrailFinder</div>
-        <button id="final-menu-btn">☰</button>
-        <nav>
-            <ul id="final-menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="directory.html">Directory</a></li>
-                <li><a href="favorites.html">Favorites</a></li>
-                <li><a href="contact.html">Join</a></li>
-            </ul>
-        </nav>
-    </header>
+  <main class="section-card">
+    <h1>Attributions</h1>
 
-    <main>
-        <div class="form-container">
-            <h1>Attributions</h1>
-            
-            <section>
-                <h2>Images</h2>
-                <p>All park images used on this site are placeholders and are intended for educational purposes. Please replace with your own licensed images or attribute them to their rightful owners.</p>
-                <ul>
-                    <li>Hero Image (yosemite.jpg): Source placeholder (e.g., Unsplash, Pexels, etc.)</li>
-                    <li>Grand Canyon Image (grand_canyon.jpg): Source placeholder</li>
-                    <li>Zion Image (zion.jpg): Source placeholder</li>
-                    <li>Yellowstone Image (yellowstone.jpg): Source placeholder</li>
-                    <li>Grand Teton Image (grand_teton.jpg): Source placeholder</li>
-                    <li>Acadia Image (acadia.jpg): Source placeholder</li>
-                    <li>Rocky Mountain Image (rocky_mountain.jpg): Source placeholder</li>
-                    <li>Glacier Image (glacier.jpg): Source placeholder</li>
-                    <li>Olympic Image (olympic.jpg): Source placeholder</li>
-                    <li>Arches Image (arches.jpg): Source placeholder</li>
-                    <li>Bryce Canyon Image (bryce_canyon.jpg): Source placeholder</li>
-                    <li>Everglades Image (everglades.jpg): Source placeholder</li>
-                    <li>Joshua Tree Image (joshua_tree.jpg): Source placeholder</li>
-                    <li>Shenandoah Image (shenandoah.jpg): Source placeholder</li>
-                    <li>Badlands Image (badlands.jpg): Source placeholder</li>
-                </ul>
-            </section>
+    <h2>Fonts</h2>
+    <ul>
+      <li>Montserrat (headings) — Google Fonts</li>
+      <li>Open Sans (body) — Google Fonts</li>
+    </ul>
 
-            <section>
-                <h2>Fonts</h2>
-                <p>This site uses fonts from Google Fonts:</p>
-                <ul>
-                    <li><a href="https://fonts.google.com/specimen/Montserrat" target="_blank">Montserrat</a> for headings.</li>
-                    <li><a href="https://fonts.google.com/specimen/Open+Sans" target="_blank">Open Sans</a> for body text.</li>
-                </ul>
-            </section>
-        </div>
-    </main>
-    
-    <footer>
-        <p>&copy; 2025 TrailFinder Project</p>
-        <p><a href="attributions.html">Attributions</a> | <a href="#">Video Demo</a></p>
-    </footer>
-    
+    <h2>Libraries & Tools</h2>
+    <ul>
+      <li>normalize.css — used to normalize cross-browser styles</li>
+      <li>Open‑Meteo — weather data used for the demo (https://open-meteo.com)</li>
+    </ul>
+
+    <h2>Images & Icons</h2>
+    <ul>
+      <li>All images and icons used in this project are from Wikimedia Commons (Wikipedia). See the image files in /final/images for original filenames and license details.</li>
+      <li>Please consult each image file's metadata on Wikimedia Commons for specific licensing and attribution requirements.</li>
+    </ul>
+
+    <h2>Code & Data</h2>
+    <ul>
+      <li>Site scripts: scripts/main.js — custom application code (author: Moroni Amon Villalobos Ortega).</li>
+      <li>Demo parks dataset generated for the course project and included in final/data/parks.json.</li>
+    </ul>
+
+  </main>
+  
+  <footer>
+    <p>&copy; 2025 TrailFinder Project Moroni Amon Villalobos Ortega</p>
+    <p><a href="attributions.html">Attributions</a> | <a href="#">Video Demo</a></p>
+  </footer>
+  
 </body>
 </html>
