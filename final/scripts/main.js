@@ -38,7 +38,7 @@ function parkTemplate(park) {
  */
 async function fetchParks() {
 
-    const url = '/final/data/parks.json'; 
+    const url = '../final/data/parks.json'; 
     try {
         const response = await fetch(url);
         if (!response.ok) {
