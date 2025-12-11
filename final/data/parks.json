@@ -5,7 +5,7 @@
         "location": "California",
         "difficulty": "Hard",
         "rating": 5.0,
-        "image": "yosemite.jpg"
+        "image": "../images/yosemite.jpg"
     },
     {
         "id": 2,
@@ -13,7 +13,7 @@
         "location": "Arizona",
         "difficulty": "Moderate",
         "rating": 4.8,
-        "image": "grand_canyon.jpg"
+        "image": "../images/GrandCanyon.jpg"
     },
     {
         "id": 3,
@@ -21,7 +21,7 @@
         "location": "Utah",
         "difficulty": "Moderate",
         "rating": 4.9,
-        "image": "zion.jpg"
+        "image": "../images/zion.jpg"
     },
     {
         "id": 4,
@@ -29,7 +29,7 @@
         "location": "Wyoming",
         "difficulty": "Hard",
         "rating": 4.9,
-        "image": "yellowstone.jpg"
+        "image": "../images/yellowstone.jpg"
     },
     {
         "id": 5,
@@ -37,7 +37,7 @@
         "location": "Wyoming",
         "difficulty": "Hard",
         "rating": 4.7,
-        "image": "grand_teton.jpg"
+        "image": "../images/grandteton.jpg"
     },
     {
         "id": 6,
@@ -45,7 +45,7 @@
         "location": "Maine",
         "difficulty": "Moderate",
         "rating": 4.6,
-        "image": "acadia.jpg"
+        "image": "../images/acadia.jpg"
     },
     {
         "id": 7,
@@ -53,7 +53,7 @@
         "location": "Colorado",
         "difficulty": "Hard",
         "rating": 4.7,
-        "image": "rocky_mountain.jpg"
+        "image": "../images/rockymountain.jpg"
     },
     {
         "id": 8,
@@ -61,7 +61,7 @@
         "location": "Montana",
         "difficulty": "Hard",
         "rating": 4.6,
-        "image": "glacier.jpg"
+        "image": "../images/glacier.jpg"
     },
     {
         "id": 9,
@@ -69,7 +69,7 @@
         "location": "Washington",
         "difficulty": "Moderate",
         "rating": 4.5,
-        "image": "olympic.jpg"
+        "image": "../images/olympic.jpg"
     },
     {
         "id": 10,
@@ -77,7 +77,7 @@
         "location": "Utah",
         "difficulty": "Moderate",
         "rating": 4.6,
-        "image": "arches.jpg"
+        "image": "../images/arches.jpg"
     },
     {
         "id": 11,
@@ -85,7 +85,7 @@
         "location": "Utah",
         "difficulty": "Moderate",
         "rating": 4.6,
-        "image": "bryce_canyon.jpg"
+        "image": "../images/bryce.jpg"
     },
     {
         "id": 12,
@@ -93,7 +93,7 @@
         "location": "Florida",
         "difficulty": "Moderate",
         "rating": 4.2,
-        "image": "everglades.jpg"
+        "image": "../images/everglades.jpg"
     },
     {
         "id": 13,
@@ -101,7 +101,7 @@
         "location": "California",
         "difficulty": "Moderate",
         "rating": 4.4,
-        "image": "joshua_tree.jpg"
+        "image": "../images/JoshuaTree.jpg"
     },
     {
         "id": 14,
@@ -109,7 +109,7 @@
         "location": "Virginia",
         "difficulty": "Easy",
         "rating": 4.3,
-        "image": "shenandoah.jpg"
+        "image": "../images/shenandoah.jpg"
     },
     {
         "id": 15,
@@ -117,6 +117,6 @@
         "location": "South Dakota",
         "difficulty": "Moderate",
         "rating": 4.1,
-        "image": "badlands.jpg"
+        "image": "../images/badlands.jpg"
     }
 ]
