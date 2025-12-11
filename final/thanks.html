@@ -4,20 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TrailFinder | Thank You</title>
+    <meta name="description" content="Thank you for joining TrailFinder! You have successfully subscribed to our community newsletter.">
+    <meta name="author" content="Moroni Amon Villalobos Ortega">
     
     <meta property="og:title" content="TrailFinder | Subscription Confirmed - Thank You">
     <meta property="og:type" content="website">
+    <meta property="og:description" content="Thank you for joining TrailFinder! You have successfully subscribed to our community newsletter.">
     <meta property="og:image" content="https://moro118.github.io/wdd231/final/images/trailfinderhero.jpg">
     <meta property="og:url" content="https://moro118.github.io/wdd231/final/thanks.html">
 
+    <link rel="icon" href="logotrail.ico" type="image/x-icon">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <script src="scripts/main.js" type="module"></script>
 </head>
 <body>
 
     <header>
-        <div class="logo">🌲 TrailFinder</div>
+        <div class="logo">
+            <img src="images/logotrail.png" alt="trail finder" aria-hidden="true">
+            <span class="site-title">TrailFinder</span>
+        </div>
+        <button id="final-menu-btn" aria-expanded="false" aria-controls="final-menu">☰</button>
+        <nav>
+            <ul id="final-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="favorites.html">Favorites</a></li>
+                <li><a href="contact.html">Join</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main style="text-align: center; padding: 50px;">
@@ -31,7 +48,8 @@
     </main>
 
     <footer>
-        <p>&copy; 2025 TrailFinder Project</p>
+        <p>&copy; 2025 TrailFinder Project Moroni Amon Villalobos Ortega</p>
+        <p><a href="attributions.html">Attributions</a> | <a href="#">Video Demo</a></p>
     </footer>
 
     <script>
