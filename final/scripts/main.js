@@ -58,6 +58,12 @@ if (menuButton) {
     menuButton.addEventListener('click', () => {
         menuButton.classList.toggle('open');
         menu.classList.toggle('open');
+
+        if (menuButton.classList.contains('open')) {
+            menuButton.textContent = '❌';
+        } else {
+            menuButton.textContent = '☰';
+        }
     });
 }
 
